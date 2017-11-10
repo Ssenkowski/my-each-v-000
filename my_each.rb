@@ -1,11 +1,17 @@
-array = ['hi', 'hello', 'bye', 'goodbye']
-
-def my_each(array) # put argument(s) here
+def my_each(words) # put argument(s) here
   counter = 0
-    while counter < 5
-      my_each(array) do |word|
-        "#{word}"
+    while counter < words.length
+        yield(words[counter])
       counter += 1
-      end
     end
+    words
+end
+
+def my_each(collection)
+  i = 0
+  while i < collection.length
+    yield(collection[i])
+    i = i + 1
+  end
+  collection
 end
