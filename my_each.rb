@@ -1,7 +1,7 @@
+array = ['hi', 'hello', 'bye', 'goodbye']
 
-def my_each(words) # put argument(s) here
+def my_each(array) # put argument(s) here
   counter = 0
-  words = ['hi', 'hello', 'bye', 'goodbye']
     while counter < 5
       my_each(words) do |word|
         word
