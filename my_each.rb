@@ -7,5 +7,5 @@ def my_each(words) # put argument(s) here
       puts word
       counter += 1
   end
-  
+
 end
