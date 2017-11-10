@@ -4,7 +4,7 @@ def my_each(array) # put argument(s) here
   counter = 0
     while counter < 5
       my_each(array) do |word|
-        word
+        yield
       counter += 1
       end
     end
